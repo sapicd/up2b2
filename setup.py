@@ -49,5 +49,5 @@ setup(
         "up2b2",
     ],
     zip_safe=False,
-    install_requires=[],
+    install_requires=["b2sdk>=1.21.0"],
 )
