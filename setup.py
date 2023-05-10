@@ -42,7 +42,7 @@ setup(
     license="Apache 2.0",
     author=author,
     author_email=email,
-    description="Save uploaded pictures in BackBlaze B2.",
+    description="Save uploaded pictures in Backblaze B2.",
     long_description=_get_readme(),
     url="https://github.com/sapicd/up2b2",
     py_modules=[

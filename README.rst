@@ -37,7 +37,9 @@ Bucket即桶名称，要求公开可读。
 在账户-应用密钥中，可以看到KeyID，生成新的主应用程序密钥即可获取应用密钥。
 
 访问域名请浏览档案，在桶中任意上传文件可获取友好URL或S3 URL，任选一种前缀即可：
+
 - 友好URL：`https://f005.backblazeb2.com/file/<Bucket>/`
+
 - S3 URL：`https://<Bucket>.s3.us-east-005.backblazeb2.com/`
 
 使用：

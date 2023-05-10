@@ -3,7 +3,7 @@
     up2b2
     ~~~~~
 
-    Save uploaded pictures in BackBlaze B2.
+    Save uploaded pictures in Backblaze B2.
 
     :copyright: (c) 2023 by Hiroshi.tao.
     :license: Apache 2.0, see LICENSE for more details.
@@ -12,7 +12,7 @@
 __version__ = "0.1.0"
 __author__ = "staugur <me@tcw.im>"
 __hookname__ = "up2b2"
-__description__ = "将图片保存到B2"
+__description__ = "将图片保存到Backblaze B2"
 __catalog__ = "upload"
 
 from flask import g
@@ -112,7 +112,7 @@ def upimg_save(**kwargs):
                 b2_basedir = b2_basedir.lstrip("/")
             filepath = join(b2_basedir, upload_path, filename)
             try:
-                #: 使用BackBlaze官方SDK上传
+                #: 使用Backblaze官方SDK上传
                 b2obj = get_bucket_obj()
                 mime_type, _ = guess_type(filename)
                 b2file:FileVersion = b2obj.upload_unbound_stream(
